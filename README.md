@@ -108,7 +108,7 @@ Concrete usage are as follows.
 
   - use `sboxn_Eva.evaluate_verbose("sboxesn.txt", "properties");` to get detailed evaluation results output in `.txt` file.
 
-    - please see files in the folder `\EvaluationResults\Sect5.1_CryptographicProperties\EVA_v\Sboxes4` for examples
+    - please see files in the folder `\EvaluationResults\Sect5.1_CryptographicProperties\Sboxes4` for examples
 
 - To find efficient implemtations in terms of BGC/GEC/MC:
 
