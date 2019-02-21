@@ -1,0 +1,41 @@
+# To build, rename this file as Makefile
+# Compile inside the Sage shell: sage -sh -c make
+# Then start Sage: from peigen import Lighter
+#                : A = Lighter()
+#                : A.evaluate_4bit()
+# Similiar for Faster: from peigen import Faster
+CC= g++
+CXXFLAGS= -fopenmp -mavx2 -std=c++14 -O3 -fPIC -fwrapv -fno-strict-aliasing \
+	-Wall -Wextra -pedantic -g -pg  \
+	-I$(SAGE_LOCAL)/include \
+	-I$(SAGE_LOCAL)/include/python2.7
+LDFLAGS = -fopenmp -lm -lstdc++
+
+OUTPUT_OPTION = -MMD -MP -o $@
+-include $(DEP)
+
+EXEC = peigen
+
+SRC = peigen.cpp
+OBJ = $(SRC:.cpp=.o)
+DEP = $(SRC:.cpp=.d)
+
+all: peigen.so
+
+peigen.cpp: peigen.pyx peigen.pxd
+	cython --cplus $<
+
+$(OBJ):$(SRC)
+
+peigen.so: $(OBJ)
+	$(CC) -shared -pthread -o peigen.so $^ $(LDFLAGS)
+
+$(EXEC): $(OBJ)
+	$(CC) $(LDFLAGS) $^ -o $@
+
+clean:
+	rm -f $(OBJ) $(DEP) $(EXEC)
+
+.PHONY: clean
+
+-include $(DEP)
