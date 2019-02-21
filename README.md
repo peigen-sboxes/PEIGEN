@@ -293,11 +293,13 @@ Concrete usage are as follows.
 - Sorry for the inconvenience again, but for small efficiency gain, bitslicing of the S-boxes is done in little endian byte and little endian bit order (this is inconsistent with that in [LIGHTER](http://jeremy.jean.free.fr/pub/fse2018_layer_implementations.tar.gz)): the least significant value is placed at the leftmost side in memory and, the least significant bit of the value is placed at the leftmost side in the value, e.g., suppose the LUT:
 
     LUT in hexadecimal (**big endian byte** order and **little endian bit** order):
+    
     | 0x0 | 0x1 | 0x2 | 0x3 | 0x4 | 0x5 | 0x6 | 0x7 | 0x8 | 0x9 | 0xa | 0xb | 0xc | 0xd | 0xe | 0xf |
     | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
     | 0xc | 0x5 | 0x6 | 0xb | 0x9 | 0x0 | 0xa | 0xd | 0x3 | 0xe | 0xf | 0x8 | 0x4 | 0x7 | 0x1 | 0x2 |
 
     LUT in binary (**big endian byte** order and **little endian bit** order):
+    
     | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 | 1010 | 1011 | 1100 | 1101 | 1110 | 1111 |
     | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
     | 1100 | 0101 | 0110 | 1011 | 1001 | 0000 | 1010 | 1101 | 0011 | 1110 | 1111 | 1000 | 0100 | 0111 | 0001 | 0010 |
@@ -305,16 +307,19 @@ Concrete usage are as follows.
     In PEIGEN, bitslicing is done as follows:
 
     LUT in binary in memory (**little endian byte** order and **little endian bit** order):
+    
     | 1111 | 1110 | 1101 | 1100 | 1011 | 1010 | 1001 | 1000 | 0111 | 0110 | 0101 | 0100 | 0011 | 0010 | 0001 | 0000 |
     | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
     | 0010 | 0001 | 0111 | 0100 | 1000 | 1111 | 1110 | 0011 | 1101 | 1010 | 0000 | 1001 | 1011 | 0110 | 0101 | 1100 |
 
     Bitslicing (**little endian byte** order and **little endian bit** order):
+    
     | 1111111100000000 | 1111000011110000 | 1100110011001100 | 1010101010101010 |
     | ---------------- | ---------------- | ---------------- | ---------------- |
     | 0000111011011001 | 0011011010000111 | 1010011101001100 | 0110010110011010 |
 
     Condensed bitsliced representation (directly indicate memory):
+    
     | ff00_f0f0_cccc_aaaa |
     | ------------------- |
     | 0ed9_3687_a74c_659a |
