@@ -1,0 +1,5 @@
+Cipher,LUT,bit_slice,Permutation,Involution,Diff,DiffFreq,Diff1,CardD1,Lin,LinFreq,Lin1,CardL1,max_degree,min_degree,MaxDegreeFreq,MinDegreeFreq,Max_ProductDegrees,LS_number,"max_v (v, w)-linear","max_w (v, w)-linear",Optimal_Class,Cost (GE) TSMC65nm,Cost is Best ,inv_LUT,inv_bit_slice,inv_max_degree,inv_min_degree,inv_MaxDegreeFreq,inv_MinDegreeFreq,inv_Max_ProductDegrees,inv_LS_number,"inv_max_v (v, w)-linear","inv_max_w (v, w)-linear",inv_Optimal_Class
+PRINTcipher,0001030607040502,78_9c_56,True,False,2,28,2,3,4,28,4,3,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-,0,-,0001070205060304,b4_6c_56,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-
+SEA,0005060704030102,1e_ac_6a,True,False,2,28,2,4,4,28,4,4,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-,0,-,0006070504010203,1e_c6_ac,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-
+ctc2,0706000402050103,2b_93_e1,True,False,2,28,2,5,4,28,4,5,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-,0,-,0206040703050100,2e_1b_78,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-
+3-way,0702040501060300,2d_63_59,True,False,2,28,2,3,4,28,4,3,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-,0,-,0704010602030500,4b_39_65,2,2,7,7,[2|2|3],7,"(2, 2)","(2, 2)",-
