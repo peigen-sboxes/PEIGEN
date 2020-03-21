@@ -1893,7 +1893,7 @@ struct Peigen::function_t
     {
       __m128i coor_ANF = _mm_loadu_si128((__m128i *)bit_slice.data());
 
-      coor_ANF = _mm_xor_si128(coor_ANF, S3_valv_mask8);
+      coor_ANF = _mm_and_si128(coor_ANF, S3_valv_mask8);
 
       // compute ANF for coordinates
       coor_ANF = _mm_xor_si128(coor_ANF, _mm_and_si128(_mm_slli_epi16(coor_ANF, 4), S3_valv_mask4));      
@@ -1909,7 +1909,7 @@ struct Peigen::function_t
     {
       __m128i coor_ANF = _mm_loadu_si128((__m128i *)bit_slice.data());
 
-      coor_ANF = _mm_xor_si128(coor_ANF, S4_valv_maskg);
+      coor_ANF = _mm_and_si128(coor_ANF, S4_valv_maskg);
 
       // compute ANF for coordinates
       coor_ANF = _mm_xor_si128(coor_ANF, _mm_and_si128(_mm_slli_epi16(coor_ANF, 8), S4_valv_mask8));
