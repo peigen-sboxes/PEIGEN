@@ -4,18 +4,18 @@ LUT = {
 };
 
 ANF of coordinates:
-y0 = 1 + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 5, related_n = 3
-y1 = 1 +    + x1 + x2 +      + x0x2 +     ;    deg = 2, term_n = 4, related_n = 3
-y2 = 1 +    +    + x2 + x0x1 +      +     ;    deg = 2, term_n = 3, related_n = 3
+y0 =   + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 4, related_n = 3
+y1 =   +    + x1 + x2 +      + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
+y2 =   +    +    + x2 + x0x1 +      +     ;    deg = 2, term_n = 2, related_n = 3
 
 ANF of components:
-y0 +    +    = 1 + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 5, related_n = 3
-   + y1 +    = 1 +    + x1 + x2 +      + x0x2 +     ;    deg = 2, term_n = 4, related_n = 3
+y0 +    +    =   + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 4, related_n = 3
+   + y1 +    =   +    + x1 + x2 +      + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
 y0 + y1 +    =   + x0 +    +    +      + x0x2 + x1x2;    deg = 2, term_n = 3, related_n = 3
-   +    + y2 = 1 +    +    + x2 + x0x1 +      +     ;    deg = 2, term_n = 3, related_n = 3
+   +    + y2 =   +    +    + x2 + x0x1 +      +     ;    deg = 2, term_n = 2, related_n = 3
 y0 +    + y2 =   + x0 + x1 +    + x0x1 +      + x1x2;    deg = 2, term_n = 4, related_n = 3
    + y1 + y2 =   +    + x1 +    + x0x1 + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
-y0 + y1 + y2 = 1 + x0 +    + x2 + x0x1 + x0x2 + x1x2;    deg = 2, term_n = 6, related_n = 3
+y0 + y1 + y2 =   + x0 +    + x2 + x0x1 + x0x2 + x1x2;    deg = 2, term_n = 5, related_n = 3
 Max degree: 2, Min degree: 2, Spectrum of degree: { 2:7, };
 
 DDT = 
@@ -128,18 +128,18 @@ LUT = {
 };
 
 ANF of coordinates:
-y0 = 1 + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 5, related_n = 3
-y1 = 1 +    + x1 +    +      + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
-y2 = 1 +    + x1 + x2 + x0x1 +      +     ;    deg = 2, term_n = 4, related_n = 3
+y0 =   + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 4, related_n = 3
+y1 =   +    + x1 +    +      + x0x2 +     ;    deg = 2, term_n = 2, related_n = 3
+y2 =   +    + x1 + x2 + x0x1 +      +     ;    deg = 2, term_n = 3, related_n = 3
 
 ANF of components:
-y0 +    +    = 1 + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 5, related_n = 3
-   + y1 +    = 1 +    + x1 +    +      + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
+y0 +    +    =   + x0 + x1 + x2 +      +      + x1x2;    deg = 2, term_n = 4, related_n = 3
+   + y1 +    =   +    + x1 +    +      + x0x2 +     ;    deg = 2, term_n = 2, related_n = 3
 y0 + y1 +    =   + x0 +    + x2 +      + x0x2 + x1x2;    deg = 2, term_n = 4, related_n = 3
-   +    + y2 = 1 +    + x1 + x2 + x0x1 +      +     ;    deg = 2, term_n = 4, related_n = 3
+   +    + y2 =   +    + x1 + x2 + x0x1 +      +     ;    deg = 2, term_n = 3, related_n = 3
 y0 +    + y2 =   + x0 +    +    + x0x1 +      + x1x2;    deg = 2, term_n = 3, related_n = 3
    + y1 + y2 =   +    +    + x2 + x0x1 + x0x2 +     ;    deg = 2, term_n = 3, related_n = 3
-y0 + y1 + y2 = 1 + x0 + x1 +    + x0x1 + x0x2 + x1x2;    deg = 2, term_n = 6, related_n = 3
+y0 + y1 + y2 =   + x0 + x1 +    + x0x1 + x0x2 + x1x2;    deg = 2, term_n = 5, related_n = 3
 Max degree: 2, Min degree: 2, Spectrum of degree: { 2:7, };
 
 DDT = 
