@@ -327,7 +327,7 @@ const __m128i S4_coors_deg_mask2 = _mm_set_epi64x(0x0ULL, 0x1668166816681668ULL)
 const __m128i S4_coors_deg_mask1 = _mm_set_epi64x(0x0ULL, 0x0116011601160116ULL); // 0000 0001 0001 0110
 
 template<int N>
-const array<int, N+1> HWorder_off = [&]
+const array<int, N+1> HWorder_off = []
 {
   array<int, N+1> aHWorder_off;
   aHWorder_off[0] = 0;
@@ -339,7 +339,7 @@ const array<int, N+1> HWorder_off = [&]
 }();
 
 template<int N>
-const array<int, 1<<N> HWorder = [&]
+const array<int, 1<<N> HWorder = []
 {
   array<int, 1<<N> aHWorder;
   int offset[N + 1] = { 0 };
@@ -1089,7 +1089,7 @@ template<int N>
 const Perm_t<N> PE;
 
 template<int N>
-const array<Peigen::function_t<N>, (1<<N)> XE = [&]
+const array<Peigen::function_t<N>, (1<<N)> XE = []
 {
   Peigen::function_t<N> I = Peigen::function_t<N>::INPUT_DEFAULT();
   array<Peigen::function_t<N>, (1<<N)> aXE;
@@ -1106,7 +1106,7 @@ const array<Peigen::function_t<N>, (1<<N)> XE = [&]
 }();
 
 template<int N>
-const bit_slice_t<N> masks = [&]
+const bit_slice_t<N> masks = []
 {
   bit_slice_t<N> amask;
   bit_slice_l_t<N> mask_init;
@@ -1136,7 +1136,7 @@ struct LExinfoGx_t
 };
 
 template<int N>
-const map<array<uint8_t, LUT_UNIT_N>, LExinfoGx_t<N> > G_Rs = [&]
+const map<array<uint8_t, LUT_UNIT_N>, LExinfoGx_t<N> > G_Rs = []
 {
   map<array<uint8_t, LUT_UNIT_N>, LExinfoGx_t<N> > aG_Rs;
   if (N == 4)

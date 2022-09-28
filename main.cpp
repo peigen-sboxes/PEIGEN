@@ -45,10 +45,20 @@
 #include <cstring>
 #include <stdio.h>
 #include <time.h>
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wsign-compare"
+#pragma GCC diagnostic ignored "-Wunused-variable"
+#pragma GCC diagnostic ignored "-Woverflow"
+#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+
 #include "faster.hpp"
 #include "func.hpp"
 #include "evaluator.hpp"
 #include "lighter.hpp"
+
+#pragma GCC diagnostic pop
 
 using namespace std;
 using namespace Peigen;

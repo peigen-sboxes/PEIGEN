@@ -51,7 +51,7 @@ using namespace std;
   according to the method used in sagemath reduced_echelon_matrix_iterator() method
 */
 template<int N>
-const vector<vector<vector<uint8_t> > > SubSpaces = [&]
+const vector<vector<vector<uint8_t> > > SubSpaces = []
 {
     if (N <= 8)
     {
